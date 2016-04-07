@@ -1,0 +1,27 @@
+
+<h1>Nova Vaga</h1>
+
+<%= form_for (@job) do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br>
+  <br>
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+  <br>
+  <br>
+  <%= f.label :category %>
+  <%= f.text_field :category %>
+  <br>
+  <br>
+  <%= f.label :company %>
+  <%= f.text_field :company %>
+  <br>
+  <br>
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+
+  <%= f.submit "Criar Vaga" %>
+
+<% end %>

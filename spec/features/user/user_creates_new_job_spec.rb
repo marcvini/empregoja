@@ -23,5 +23,6 @@ feature 'User creates a new job' do
     expect(page).to have_content job.category
     expect(page).to have_content job.company
     expect(page).to have_content job.description
+
   end
 end
