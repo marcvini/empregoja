@@ -23,6 +23,7 @@ feature 'User creates a new job' do
     expect(page).to have_content job.category
     expect(page).to have_content job.company
     expect(page).to have_content job.description
+    expect(page).not_to have_content "Vaga em Destaque"
   end
 
   scenario 'featured job' do
