@@ -13,3 +13,9 @@
   <%= f.text_area :description %>
   <%= f.submit 'Criar Vaga' %>
 <% end %>
+
+<% if @job.errors %>
+  <% @job.errors.full_messages.each do |message| %>
+    <p><%= message%></p>
+  <% end %>
+<% end %>
