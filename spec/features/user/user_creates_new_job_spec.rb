@@ -2,7 +2,6 @@ require 'rails_helper'
 
 feature 'User creates a new job' do
   scenario 'successfully' do
-    visit new_job_path
 
     company = Company.create(name: 'Campus Code',
                             location: 'São Paulo',
@@ -13,6 +12,8 @@ feature 'User creates a new job' do
                   location: 'Rio de Janeiro',
                   category: 'Desenvolvedor',
                   description: 'Vaga para Dev Master para Bootcamp Rails')
+
+    visit new_job_path
 
     fill_in 'Title',       with: job.title
     fill_in 'Location',    with: job.location
